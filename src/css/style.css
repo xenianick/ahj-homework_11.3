@@ -1,0 +1,99 @@
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #191970;
+  background-image: url('../img/square.png');
+}
+p {
+  margin: 0;
+}
+:global(.main-container) {
+  display: flex;
+  width: 100%;
+}
+:global(.stats-container), :global(.project-tasks-container) {
+  width: 50%;
+  margin: 10px;
+}
+
+:global(.projects-container), :global(.tasks-container) {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #191970;
+}
+:global(.stats-header), :global(.project-tasks-header) {
+  margin-bottom: 10px;
+}
+:global(.projects-header) {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px 10px 20px;
+  box-sizing: border-box;
+}
+:global(.project-line) {
+  border-top: 1px solid #191970;
+  padding: 10px 40px 10px 20px;  
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+:global(.tasks-quantity) {
+  box-sizing: border-box;
+  padding-top: 2px;
+  width: 35px;
+  height: 20px;
+  background-color: #191970;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+:global(.tasks-header) {
+  display: flex;
+  padding: 10px 40px 10px 20px;
+  box-sizing: border-box;
+}
+:global(.project-selection-btn) {
+  margin-left: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+:global(.task-line) {
+  border-top: 1px solid #191970;
+  padding: 10px 40px 10px 20px;  
+  box-sizing: border-box;
+  display: flex;
+}
+:global(.task-checkbox) {
+  border: 1px solid #191970;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  text-align: center;
+  padding-top: 2px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #228b22;
+  cursor: pointer;
+}
+:global(.popup) {
+  position: absolute;
+  padding: 10px;
+  top: 30px;
+  left: 78px;
+  background-color: #ffffff;
+  border: 1px solid #191970;
+}
+:global(.project-name) {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+:global(.project-name:last-of-type) {
+  margin-bottom: 0;
+}
+:global(.project-name:hover) {
+  text-decoration: underline;
+}
+:global(.hide) {
+  display: none;
+}
